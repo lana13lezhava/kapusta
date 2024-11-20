@@ -1,0 +1,60 @@
+.header
+    background-color: #b82c2c
+    grid-column: full-start / col-start 5
+    padding:  1rem 3rem
+    background: url(../../img/lana.jpg) center / cover no-repeat
+
+.logo
+    display: block
+    &__h3
+        text-decoration: none
+        color: white
+        font-size: 2.5rem
+        font-weight:300
+        transition: .3 all
+        display: inline-block
+        text-transform: capitalize
+       
+.text-1
+    padding: 2vw 2vw
+    display: grid
+    align-content: center
+    justify-items: start
+    &__h1
+        color: #e31d1d
+        margin-bottom: 2.1rem
+        font-weight: 700
+        line-height: 100%
+    &__h2
+        
+        color: #5d5959
+        margin-bottom: 6rem
+        font-weight: 700
+        line-height: 100%
+
+    &__p
+        line-height: 100%
+        font-size: 4rem
+        color:#5d5959 
+        margin-bottom: 13rem
+        &::after
+            content: ""
+            height: .1rem
+            display: block 
+            background-color: #e31d1d
+            
+            
+
+
+button
+    
+    border-radius: 30px
+    font-size: 1.6rem
+    font-weight: 700
+    text-transform: uppercase
+    color: #f7f2f2
+    background-color: #e31d1d
+    border: 0
+    padding: 1.5rem 3rem
+    &:hover
+        background-color: #f58a8a

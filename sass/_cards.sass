@@ -1,0 +1,23 @@
+.cards
+    background-color: white
+    grid-column: center-start / center-end
+    @include respond(tab-land)
+        padding: 0 3rem
+    &__line
+        font-size: 3rem
+        color: #e31d1d
+        font-weight: 700
+        display: grid
+        grid-template-columns: 1fr max-content 1fr
+        grid-column-gap: 2rem
+        align-items: center
+        &::before, &::after
+            content: ""
+            height: .1rem
+            display: block
+            background-color: #e31d1d
+    &__p
+        color:#5d5959 
+        margin-bottom: 13rem
+       
+            

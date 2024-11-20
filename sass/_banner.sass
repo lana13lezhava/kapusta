@@ -1,0 +1,62 @@
+.banner-img
+    background-color: white
+    grid-column: full-start / col-start 5
+    display: grid
+    grid-template-columns: repeat(16, 1fr)
+    grid-template-rows: repeat(24, 1fr)
+    @include respond(tab-land)
+        grid-column: full-start / full-end
+        padding: 0 4rem
+
+    &__img2
+        background: url(../../img/jjjj.jpg) center / cover no-repeat
+        grid-column: 4 / span 8
+        grid-row: 5 / span 17
+
+    &__img3
+        background-color: #59575721
+        grid-column: 8 / span 8
+        grid-row: 7 / span 17
+
+.banner-text
+    background-color: white
+    grid-column: col-end 4 / full-end
+    display: grid
+    grid-template-columns: repeat(16,1fr)
+    grid-template-rows: repeat(24, 1fr)
+    @include respond(tab-land)
+        grid-column: full-start / full-end
+        padding: 0 4rem
+        margin-bottom: 3rem
+    &__img4
+        background-color: #59575720
+        grid-column: 1 / span 8
+        grid-row: 3 / span 17
+
+    &__p
+        line-height: 110%
+        align-content: start
+        justify-content: start
+        padding: 5vw 3vw
+        font-weight: 700
+        @include respond(tab-port)
+            font-size: 1rem
+
+        &::after
+            content: ""
+            height: .1rem
+            width: 9rem
+            display: block
+            background-color: #e31d1d
+
+    &__img5
+        background-color: #59575720
+        grid-column: 4 / span 8
+        grid-row: 5 / span 17
+
+    &__img6
+        background: url(../../img/llll.jpg) center / cover no-repeat
+        grid-column: 8 / span 8
+        grid-row: 7 / span 17
+    &__p
+        color: #5d595979
